@@ -99,6 +99,14 @@ import java.net.URL;
                     "cant find search",
                     5);
 
+            WebElement searchField = waitForElementPresent(
+                    By.id ("org.wikipedia:id/search_src_text"),
+                    "Cannot find Search",
+                    5
+            );
+
+            testTextSearchField(searchField);
+
             waitForElementAndSendKeys(
                     By.xpath ("//*[(@text='Search…')]"),
                     "Java",
@@ -116,32 +124,22 @@ import java.net.URL;
                     15
             );
 
-            String article_title = titleElement.getAttribute("text");
 
-            Assert.assertEquals(
-                    "We see unexpected title",
-                    "Java (programming language)",
-                    article_title
+          String article_title = titleElement.getAttribute("text");
 
-            );
+           Assert.assertEquals(
+                 "We see unexpected title",
+                  "Java (programming language)",
+                   article_title
+
+           );
 
         }
 
-        @Test
-        public void testTextSearchField()
+        private void testTextSearchField(WebElement searchField)
         {
-            waitForElementAndClick(
-                    By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
-                    "cant find search",
-                    5);
 
-            WebElement SearchField = waitForElementPresent(
-                    By.id("org.wikipedia:id/search_src_text"),
-                    "Cannot find Search Field",
-                    15
-            );
-
-            String textSearchField = SearchField.getAttribute("text");
+            String textSearchField = searchField.getAttribute("text");
 
             Assert.assertEquals(
                     "Search field doesnt contain expected text",
@@ -149,6 +147,7 @@ import java.net.URL;
                     textSearchField
 
             );
+
         }
 
         private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) {
