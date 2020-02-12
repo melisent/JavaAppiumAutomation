@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba353797-19c2-422a-8572-f41034cb23f2" name="Default Changelist" comment="" />
+    <list default="true" id="ba353797-19c2-422a-8572-f41034cb23f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +18,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XD0u6bekpXv1TS1o4qgZmI3ysn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,11 +30,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.FirstTest">
     <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -36,9 +45,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTest.FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="FirstTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCancelSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCompareArticleTitle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FirstTest" />
+        <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
+        <item itemvalue="JUnit.FirstTest.testCancelSearch" />
+        <item itemvalue="JUnit.FirstTest.FirstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -56,25 +98,86 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1584" height="194" key="GridCell.Tab.0.bottom" timestamp="1580568350156">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="194" key="GridCell.Tab.0.bottom" timestamp="1581516158974">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
+    <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.23.1440.799@0.23.1440.799" timestamp="1581176132895" />
+    <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.23.1440.803@0.23.1440.803" timestamp="1581515992393" />
+    <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.23.1440.804@0.23.1440.804" timestamp="1581516158974" />
+    <state width="1398" height="194" key="GridCell.Tab.0.bottom/0.23.1440.806@0.23.1440.806" timestamp="1581450941667" />
+    <state width="1584" height="194" key="GridCell.Tab.0.bottom/0.23.1440.814@0.23.1440.814" timestamp="1580569328452" />
     <state width="1584" height="194" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1580568350156" />
-    <state width="1584" height="194" key="GridCell.Tab.0.center" timestamp="1580568350155">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="194" key="GridCell.Tab.0.center" timestamp="1581516158973">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
+    <state width="1398" height="194" key="GridCell.Tab.0.center/0.23.1440.799@0.23.1440.799" timestamp="1581176132894" />
+    <state width="1398" height="194" key="GridCell.Tab.0.center/0.23.1440.803@0.23.1440.803" timestamp="1581515992392" />
+    <state width="1398" height="194" key="GridCell.Tab.0.center/0.23.1440.804@0.23.1440.804" timestamp="1581516158973" />
+    <state width="1398" height="194" key="GridCell.Tab.0.center/0.23.1440.806@0.23.1440.806" timestamp="1581450941666" />
+    <state width="1584" height="194" key="GridCell.Tab.0.center/0.23.1440.814@0.23.1440.814" timestamp="1580569328452" />
     <state width="1584" height="194" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1580568350155" />
-    <state width="1584" height="194" key="GridCell.Tab.0.left" timestamp="1580568350154">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="194" key="GridCell.Tab.0.left" timestamp="1581516158973">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
+    <state width="1398" height="194" key="GridCell.Tab.0.left/0.23.1440.799@0.23.1440.799" timestamp="1581176132894" />
+    <state width="1398" height="194" key="GridCell.Tab.0.left/0.23.1440.803@0.23.1440.803" timestamp="1581515992391" />
+    <state width="1398" height="194" key="GridCell.Tab.0.left/0.23.1440.804@0.23.1440.804" timestamp="1581516158973" />
+    <state width="1398" height="194" key="GridCell.Tab.0.left/0.23.1440.806@0.23.1440.806" timestamp="1581450941665" />
+    <state width="1584" height="194" key="GridCell.Tab.0.left/0.23.1440.814@0.23.1440.814" timestamp="1580569328452" />
     <state width="1584" height="194" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1580568350154" />
-    <state width="1584" height="194" key="GridCell.Tab.0.right" timestamp="1580568350156">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state width="1398" height="194" key="GridCell.Tab.0.right" timestamp="1581516158974">
+      <screen x="0" y="23" width="1440" height="804" />
     </state>
+    <state width="1398" height="194" key="GridCell.Tab.0.right/0.23.1440.799@0.23.1440.799" timestamp="1581176132895" />
+    <state width="1398" height="194" key="GridCell.Tab.0.right/0.23.1440.803@0.23.1440.803" timestamp="1581515992392" />
+    <state width="1398" height="194" key="GridCell.Tab.0.right/0.23.1440.804@0.23.1440.804" timestamp="1581516158974" />
+    <state width="1398" height="194" key="GridCell.Tab.0.right/0.23.1440.806@0.23.1440.806" timestamp="1581450941666" />
+    <state width="1584" height="194" key="GridCell.Tab.0.right/0.23.1440.814@0.23.1440.814" timestamp="1580569328452" />
     <state width="1584" height="194" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1580568350156" />
+    <state width="1398" height="242" key="GridCell.Tab.1.bottom" timestamp="1581433797442">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state width="1398" height="242" key="GridCell.Tab.1.bottom/0.23.1440.799@0.23.1440.799" timestamp="1581114659224" />
+    <state width="1398" height="242" key="GridCell.Tab.1.bottom/0.23.1440.806@0.23.1440.806" timestamp="1581433797442" />
+    <state width="1398" height="242" key="GridCell.Tab.1.center" timestamp="1581433797442">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state width="1398" height="242" key="GridCell.Tab.1.center/0.23.1440.799@0.23.1440.799" timestamp="1581114659223" />
+    <state width="1398" height="242" key="GridCell.Tab.1.center/0.23.1440.806@0.23.1440.806" timestamp="1581433797442" />
+    <state width="1398" height="242" key="GridCell.Tab.1.left" timestamp="1581433797442">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state width="1398" height="242" key="GridCell.Tab.1.left/0.23.1440.799@0.23.1440.799" timestamp="1581114659222" />
+    <state width="1398" height="242" key="GridCell.Tab.1.left/0.23.1440.806@0.23.1440.806" timestamp="1581433797442" />
+    <state width="1398" height="242" key="GridCell.Tab.1.right" timestamp="1581433797442">
+      <screen x="0" y="23" width="1440" height="806" />
+    </state>
+    <state width="1398" height="242" key="GridCell.Tab.1.right/0.23.1440.799@0.23.1440.799" timestamp="1581114659223" />
+    <state width="1398" height="242" key="GridCell.Tab.1.right/0.23.1440.806@0.23.1440.806" timestamp="1581433797442" />
     <state x="228" y="23" width="1024" height="821" key="SettingsEditor" timestamp="1580566416216">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="228" y="23" width="1024" height="821" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1580566416216" />
+    <state x="399" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1581510777002">
+      <screen x="0" y="23" width="1440" height="803" />
+    </state>
+    <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.799@0.23.1440.799" timestamp="1581113170799" />
+    <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.803@0.23.1440.803" timestamp="1581510777002" />
+    <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.806@0.23.1440.806" timestamp="1581434253068" />
+    <state x="385" y="146" width="670" height="676" key="search.everywhere.popup" timestamp="1581176365492">
+      <screen x="0" y="23" width="1440" height="799" />
+    </state>
+    <state x="385" y="146" width="670" height="676" key="search.everywhere.popup/0.23.1440.799@0.23.1440.799" timestamp="1581176365492" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FirstTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
