@@ -127,6 +127,30 @@ import java.net.URL;
 
         }
 
+        @Test
+        public void testTextSearchField()
+        {
+            waitForElementAndClick(
+                    By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                    "cant find search",
+                    5);
+
+            WebElement SearchField = waitForElementPresent(
+                    By.id("org.wikipedia:id/search_src_text"),
+                    "Cannot find Search Field",
+                    15
+            );
+
+            String textSearchField = SearchField.getAttribute("text");
+
+            Assert.assertEquals(
+                    "Search field doesnt contain expected text",
+                    "Search…",
+                    textSearchField
+
+            );
+        }
+
         private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) {
 
             WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
