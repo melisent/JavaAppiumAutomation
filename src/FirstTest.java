@@ -404,6 +404,29 @@ public class FirstTest {
                 5);
     }
 
+    @Test
+    public void testArticleTitlePresent()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "cant find search",
+                5);
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[(@text='Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "cant find search",
+                5);
+
+        assertElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "We didnt find any item");
+    }
 
     @Test
     public void testFindIreland() {
@@ -565,6 +588,17 @@ public class FirstTest {
             throw new AssertionError(default_message + " " + error_message);
         }
     }
+
+    private void assertElementPresent (By by, String error_message)
+    {
+        int amount_of_elements = getAmountOfElements(by);
+        if (amount_of_elements == 0 ) {
+            String default_message= "An element '" + by.toString() + "' supposed to present";
+            throw new AssertionError(default_message + " " + error_message);
+        }
+    }
+
+
 
     private String waitForElementAndGetAttribute(By by, String attribute, String error_message, long timeOutInSeconds)
     {
