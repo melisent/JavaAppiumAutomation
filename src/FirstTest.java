@@ -429,6 +429,155 @@ public class FirstTest {
     }
 
     @Test
+    public void testSaveTwoArticlesAndDeleteOne()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "cant find search",
+                5);
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[(@text='Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "cant find search",
+                5);
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find Article Title",
+                15);
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
+                "Cannot Find More Options",
+                10);
+
+        waitForElementAndClick(
+                By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.TextView[@text='Add to reading list']"),
+                "Cannot find option to add article to reading list",
+                5);
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/onboarding_button"),
+                "Cannot fing 'Got it' tip overlay",
+                5);
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/text_input"),
+                "Cannot find input for a reading list",
+                5);
+
+        String name_of_folder = "Learning Programming";
+
+        waitForElementAndSendKeys(
+                By.id("org.wikipedia:id/text_input"),
+                (name_of_folder),
+                "Cannot put text into articles folder title",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='OK']"),
+                "Cannot find OK",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+                "Cannot close article, Cannot find X",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
+                "cant find search",
+                5);
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[(@text='Search…')]"),
+                "Ruby",
+                "Cannot find search input",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Programming language']"),
+                "cant find search",
+                5);
+
+        WebElement secondArticleTitle = waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find Article Title",
+                15);
+
+        String second_article_title_before_deleting = secondArticleTitle.getAttribute("text");
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
+                "Cannot Find More Options",
+                10);
+
+        waitForElementAndClick(
+                By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.TextView[@text='Add to reading list']"),
+                "Cannot find option to add article to reading list",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='" + name_of_folder + "']"),
+                "Cannot find existing article folder",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
+                "Cannot close article, Cannot find X",
+                5);
+
+        waitForElementAndClick(
+                By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
+                "Cannot find navigation button to my lists",
+                5);
+
+        waitForElementPresent(
+                By.xpath("//*[@text='" + name_of_folder + "']"),
+                "Cannot find new article folder",
+                5
+        );
+
+        waitForElementAndClick(
+                By.xpath("//*[@text='" + name_of_folder + "']"),
+                "Cannot find new article folder",
+                5);
+
+        swipeElementToLeft(
+                By.xpath("//*[@text='Java (programming language)']"),
+                "Cannot find Saved Article");
+
+        waitForElementNotPresent(
+                By.xpath("//*[@text='Java (programming language)']"),
+                "Cannot Delete Saved Article",
+                5);
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/page_list_item_container"),
+                "Cannot Find the Second Saved Article",
+                5);
+
+        WebElement secondArticleTitleAfterDeleting = waitForElementPresent(
+                By.id("org.wikipedia:id/view_page_title_text"),
+                "Cannot find second article after deleting first article");
+
+        String second_article_title_after_deleting = secondArticleTitleAfterDeleting.getAttribute("text");
+
+        Assert.assertEquals(
+                "Second Article Title Changes After deleting First Article ",
+                second_article_title_before_deleting,
+                second_article_title_after_deleting
+
+        );
+    }
+
+    @Test
     public void testFindIreland() {
         waitForElementAndClick(
                 By.id("org.wikipedia:id/search_container"),
@@ -567,7 +716,7 @@ public class FirstTest {
         TouchAction action = new TouchAction(driver);
         action
                 .press(right_x, middle_y)
-                .waitAction(300)
+                .waitAction(350)
                 .moveTo(left_x,middle_y)
                 .release()
                 .perform();
@@ -597,8 +746,6 @@ public class FirstTest {
             throw new AssertionError(default_message + " " + error_message);
         }
     }
-
-
 
     private String waitForElementAndGetAttribute(By by, String attribute, String error_message, long timeOutInSeconds)
     {
