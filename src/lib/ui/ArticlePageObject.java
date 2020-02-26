@@ -78,4 +78,10 @@ public class ArticlePageObject extends MainPageObject{
                 5);
     }
 
+    public void assertArticleTitlePresents ()
+
+    {
+        this.assertElementPresent(By.id(TITLE), "We didnt find any item");
+    }
+
 }

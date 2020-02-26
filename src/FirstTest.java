@@ -23,25 +23,15 @@ public class FirstTest extends CoreTestCase {
     @Test
     public void testArticleTitlePresent()
     {
-        MainPageObject.waitForElementAndClick(
-                By.xpath("//*[contains(@text, 'Search Wikipedia')]"),
-                "cant find search",
-                5);
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
 
-        MainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[(@text='Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5);
+        SearchPageObject.initSearchInput();
+        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.clickByArticleWithSub("Object-oriented programming language");
 
-        MainPageObject.waitForElementAndClick(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
-                "cant find search",
-                5);
+        ArticlePageObject ArticlePageObject = new ArticlePageObject(driver);
 
-        MainPageObject.assertElementPresent(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "We didnt find any item");
+        ArticlePageObject.assertArticleTitlePresents();
     }
 
     //ex 3
