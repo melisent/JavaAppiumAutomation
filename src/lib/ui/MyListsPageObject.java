@@ -73,4 +73,13 @@ public class MyListsPageObject extends MainPageObject {
                 "Cannot find saved article with title "+article_title,
                 15);
     }
+
+    public void waitForArticleAndAClickByTitle(String article_title)
+    {
+        String article_xpath = getFolderXpathByName(article_title);
+        this.waitForElementAndClick(
+                By.xpath(article_xpath),
+                "Cannot find saved article with title "+article_title,
+                15);
+    }
 }
