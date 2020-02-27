@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ba353797-19c2-422a-8572-f41034cb23f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libs/java-client-4.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libs/selenium-server-standalone-3.4.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/CoreTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/CoreTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -204,6 +204,10 @@
     <state x="399" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.801@0.23.1440.801" timestamp="1582810598808" />
     <state x="399" y="269" key="com.intellij.ide.util.TipDialog/0.23.1440.803@0.23.1440.803" timestamp="1581510777002" />
     <state x="399" y="270" key="com.intellij.ide.util.TipDialog/0.23.1440.806@0.23.1440.806" timestamp="1581434253068" />
+    <state x="468" y="51" key="refactoring.ChangeSignatureDialog" timestamp="1582811559217">
+      <screen x="0" y="23" width="1440" height="801" />
+    </state>
+    <state x="468" y="51" key="refactoring.ChangeSignatureDialog/0.23.1440.801@0.23.1440.801" timestamp="1582811559217" />
     <state x="385" y="147" width="670" height="682" key="search.everywhere.popup" timestamp="1581516774795">
       <screen x="0" y="23" width="1440" height="806" />
     </state>
