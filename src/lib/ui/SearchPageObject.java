@@ -27,12 +27,13 @@ abstract public class SearchPageObject extends MainPageObject{
     public void initSearchInput()
     {
         this.waitForElementAndClick(SEARCH_INIT_ELEMENT, "Cannot find and click search init element", 5);
-        this.waitForElementPresent(SEARCH_INIT_ELEMENT, "Cannot find search input after clicking search init element", 5);
+       // this.waitForElementPresent(SEARCH_INPUT, "Cannot find search input after clicking search init element", 5);
     }
 
     public void typeSearchLine (String search_line)
     {
         this.waitForElementAndSendKeys(SEARCH_INPUT, search_line, "Cannot find and type into search input", 5);
+
     }
 
     public void waitForSearchResult(String substring)
